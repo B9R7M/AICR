@@ -34,7 +34,7 @@ CMD-AICR é um script de automação desenvolvido em batch, criado para simplifi
 
 ### Preparação e como usar
 
-- Baixe e descompacte o arquivo disponível na aba [**Releases**](URL). _([SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=pt-br) já incluso)._
+- Baixe e descompacte o arquivo disponível na aba [**Releases**](https://github.com/B9R7M/CMD-AICR/releases). _([SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=pt-br) já incluso)._
 - Renomeie os arquivos que serão utilizados na instalação da ROM:
 
     - **Custom ROM.zip** para `ROM.zip`
