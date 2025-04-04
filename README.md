@@ -244,5 +244,5 @@ Exemplos:
 
 - Este projeto foi desenvolvido sem fins lucrativos, mas, se você gostou e deseja me agradecer, considere fazer uma doação!
 
-  **Chave PIX**: `256f1867-fbe0-4c14-9ed4-44307e5057a6`
-  **PayPal**: `joiltonsilvasec3@gmail.com`
+- **Chave PIX**: `256f1867-fbe0-4c14-9ed4-44307e5057a6`
+- **PayPal**: `joiltonsilvasec3@gmail.com`
