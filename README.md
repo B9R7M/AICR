@@ -15,22 +15,22 @@ CMD-AICR é um script de automação desenvolvido em batch, criado para simplifi
 
 ### O que esse script é capaz de fazer? 
 
-   - Verifica os arquivos necessários pra instalação.
-   - Instala GKIs via Fastboot.
-   - Reinicializa automaticamente no recovery.
-   - Instala o arquivo da ROM via ADB Sideload.
-   - Instala os GAPPS.
-   - Instala arquivos de ROOT.
-   - Instala GKI corrigida por algum gerenciador de ROOT ou Kernels já construidos na partição **boot** ou **init_boot** caso você modifique tal comando.
-   - Reinicializa automaticamente no recovery novamente no final da instalação.
+   - Verifica os arquivos necessários pra instalação
+   - Instala GKIs via Fastboot
+   - Reinicializa automaticamente no recovery
+   - Instala o arquivo da ROM via ADB Sideload
+   - Instala os GAPPS
+   - Instala arquivos de ROOT
+   - Instala GKI corrigida por algum gerenciador de ROOT ou Kernels já construidos na partição **boot** ou **init_boot** caso você modifique tal comando
+   - Reinicializa automaticamente no recovery novamente no final da instalação
 
 ### Requisitos
 
-- Um PC com Windows 10 ou superior.
-- Bootloader do seu dispositivo desbloqueado.
+- Um PC com Windows 10 ou superior
+- Bootloader do seu dispositivo desbloqueado
 - Drivers específicos para o seu dispositivo _(Talvez seu PC tenha problemas em reconhecê-lo sem eles)_
-- Arquivos necessários para a instalação da Custom ROM _(consulte a wiki do seu dispositivo)_.
-- **CMD-AICR.bat** na mesma pasta que os arquivos da ROM e SDK Plataform-Tools.
+- Arquivos necessários para a instalação da Custom ROM _(consulte a wiki do seu dispositivo)_
+- **CMD-AICR.bat** na mesma pasta que os arquivos da ROM e SDK Plataform-Tools
 
 ### Preparação e como usar
 
@@ -46,11 +46,11 @@ CMD-AICR é um script de automação desenvolvido em batch, criado para simplifi
     - `vendor_boot.img` _(caso esteja com um nome diferente)_
     - GKI corrigida por algum gerenciador de ROOT ou kernel já modificado (**boot.img**) para `rootboot.img`
 
-- Após renomear os arquivos, cole todos na mesma pasta onde o arquivo **CMD-AICR.bat** está localizado.
+- Após renomear os arquivos, cole todos na mesma pasta onde o arquivo **CMD-AICR.bat** está localizado
 
-- Execute **CMD-AICR.bat** e siga as instruções do script.
+- Execute **CMD-AICR.bat** e siga as instruções do script
 
-_Os nomes dos arquivos mencionados acima são apenas exemplos._
+_Os nomes dos arquivos mencionados acima são apenas exemplos_
 
 ---
 
@@ -74,13 +74,13 @@ _Os nomes dos arquivos mencionados acima são apenas exemplos._
 
 - Meu dispositivo exige alterações nos comandos. Como modificá-los?
 
-    - Primeiramente, recomendo instalar um **ambiente de desenvolvimento** _(IDE)_ para simplificar a edição ou modificação dos comandos. Uma excelente sugestão é o [Visual Studio Code](https://code.visualstudio.com/download). Recomendo essa opção porque as instruções descritas abaixo foram elaboradas com base nessa **IDE**.
-    - Incluí comentários ao longo do script com marcações específicas para identificar facilmente os pontos onde podem ser feitas alterações no script. No total, há 30 marcações: **C1**, **C2**, **C3**, **C4**,... **C27**, **C28**, **C29**, **C30**. Apenas os pontos essenciais serão citados aqui, mas você pode explorar os demais conforme achar necessário.
-     - Use "`%`" pra buscar comentários no script. Exemplo: "`%C1`".
+    - Primeiramente, recomendo instalar um **ambiente de desenvolvimento** _(IDE)_ para simplificar a edição ou modificação dos comandos. Uma excelente sugestão é o [Visual Studio Code](https://code.visualstudio.com/download). Recomendo essa opção porque as instruções descritas abaixo foram elaboradas com base nessa **IDE**
+    - Incluí comentários ao longo do script com marcações específicas para identificar facilmente os pontos onde podem ser feitas alterações no script. No total, há 30 marcações: **C1**, **C2**, **C3**, **C4**, etc. Apenas os pontos essenciais serão citados aqui, mas você pode explorar os demais conforme achar necessário
+     - Use "`%`" pra buscar comentários no script. Exemplo: "`%C1`"
 
 - Modificando comandos FASTBOOT
 
-    - Na barra de busca superior do **VS Code**, busque por: `%C6`. Isso levará você diretamente à seção onde os primeiros **comandos fastboot** serão executados.
+    - Na barra de busca superior do **VS Code**, busque por: `%C6`. Isso levará você diretamente à seção onde os primeiros **comandos fastboot** serão executados
 
 
 Exemplo:
@@ -110,7 +110,7 @@ Exemplo com modificações:
 
 - Comando FASTBOOT de reinicialização 
 
-     - Busque por: `%C8` ou/e `%C30`.
+     - Busque por: `%C8` ou/e `%C30`
 
 
 Exemplos:
@@ -132,7 +132,7 @@ Exemplos:
 
 - Comandos de instalação via ADB Sideload
 
-     - Busque por: `%C14`, `%C15`, `%C16` e `%C17` para a instalação da ROM. Como o script oferece a opção de múltiplas escolhas, os comandos são repetidos.
+     - Busque por: `%C14`, `%C15`, `%C16` e `%C17` para a instalação da ROM. Como o script oferece a opção de múltiplas escolhas, os comandos são repetidos
 
 
 Exemplos:
