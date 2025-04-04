@@ -28,7 +28,7 @@ CMD-AICR é um script de automação desenvolvido em batch, criado para simplifi
 
 - Um PC com Windows 10 ou superior.
 - Bootloader do seu dispositivo desbloqueado.
-- Drivers específicos para o seu dispositivo _(Talvez seu PC tenha problemas em reconhecê-lo sem eles)_.
+- Drivers específicos para o seu dispositivo _(Talvez seu PC tenha problemas em reconhecê-lo sem eles)_
 - Arquivos necessários para a instalação da Custom ROM _(consulte a wiki do seu dispositivo)_.
 - **CMD-AICR.bat** na mesma pasta que os arquivos da ROM e SDK Plataform-Tools.
 
