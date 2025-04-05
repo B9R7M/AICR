@@ -1,62 +1,62 @@
 # CMD-AICR
-CMD-AICR é um script de automação desenvolvido em batch, criado para simplificar, de forma parcial, a instalação de Custom ROMs em dispositivos que utilizam Fastboot/Bootloader. Dependendo do modelo do dispositivo, não será necessário inserir comandos manualmente, pois todo o processo é realizado automaticamente.
+CMD-AICR is a batch automation script developed to partially simplify the installation of Custom ROMs on devices using Fastboot/Bootloader. Depending on the device model, it will not be necessary to manually input commands, as the entire process is carried out automatically.
 
 ---
 
-### Isenção de responsabilidade. 
+### Disclaimer
 
-- Não me responsabilizo por quaisquer danos ao seu dispositivo ao utilizar este script. A responsabilidade é inteiramente sua. Esteja ciente disso e prossiga por sua conta e risco.
+- I am not responsible for any damage to your device when using this script. The responsibility is entirely yours. Be aware of this and proceed at your own risk.
 
-### Aviso Importante! 
+### Important Notice!
 
-- Este script foi desenvolvido com base no processo de instalação de Custom ROMs de um [**Motorola Edge 20 Pro**](https://wiki.lineageos.org/devices/pstar/install/#) _(meu dispositivo pessoal)_. É importante observar que, dependendo do seu dispositivo, podem haver diferenças específicas nos comandos, sendo necessário modificá-los manualmente no script. Se esse for o seu caso, clique [aqui](#notas-importantes) pra aprender a modificá-lo de forma mais simples.
-
----
-
-### O que esse script é capaz de fazer? 
-
-   - Verifica os arquivos necessários pra instalação
-   - Instala GKIs via Fastboot
-   - Reinicializa automaticamente no recovery
-   - Instala o arquivo da ROM via ADB Sideload
-   - Instala os GAPPS
-   - Instala arquivos de ROOT
-   - Instala GKI corrigida por algum gerenciador de ROOT ou Kernels já construidos na partição **boot** ou **init_boot** caso você modifique tal comando
-   - Reinicializa automaticamente no recovery novamente no final da instalação
-
-### Requisitos
-
-- Um PC com Windows 10 ou superior
-- Bootloader do seu dispositivo desbloqueado
-- Drivers específicos para o seu dispositivo _(Talvez seu PC tenha problemas em reconhecê-lo sem eles)_
-- Arquivos necessários para a instalação da Custom ROM _(consulte a wiki do seu dispositivo)_
-- **CMD-AICR.bat** na mesma pasta que os arquivos da ROM e SDK Plataform-Tools
-
-### Preparação e como usar
-
-- Baixe e descompacte o arquivo disponível na aba [**Releases**](https://github.com/B9R7M/CMD-AICR/releases). _([SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=pt-br) já incluso)._
-- Renomeie os arquivos que serão utilizados na instalação da ROM:
-
-    - **Custom ROM.zip** para `ROM.zip`
-    - **NikGapps.zip** para `GAPPS.zip`
-    - **Magisk-v28.zip** para `magisk.zip`
-    - **KernelSU.zip** para `KSU.zip`
-    - `boot.img` _(caso esteja com um nome diferente)_
-    - `dtbo.img` _(caso esteja com um nome diferente)_
-    - `vendor_boot.img` _(caso esteja com um nome diferente)_
-    - GKI corrigida por algum gerenciador de ROOT ou kernel já modificado (**boot.img**) para `rootboot.img`
-
-- Após renomear os arquivos, cole todos na mesma pasta onde o arquivo **CMD-AICR.bat** está localizado
-
-- Execute **CMD-AICR.bat** e siga as instruções do script
-
-_Os nomes dos arquivos mencionados acima são apenas exemplos_
+- This script was developed based on the Custom ROM installation process of a [**Motorola Edge 20 Pro**](https://wiki.lineageos.org/devices/pstar/install/#) _(my personal device)_. It is important to note that, depending on your device, there may be specific differences in the commands, requiring you to modify them manually in the script. If that's the case, click [here](#important-notes) to learn how to modify it more easily.
 
 ---
 
-### Notas importantes
+### What can this script do?
 
-- Este script executa os seguintes comandos por padrão: 
+   - Verifies the necessary files for installation
+   - Installs GKIs via Fastboot
+   - Automatically reboots into recovery
+   - Installs the ROM file via ADB Sideload
+   - Installs the GAPPS
+   - Installs ROOT files
+   - Installs a patched GKI via a ROOT manager or prebuilt Kernels already built into the **boot** or **init_boot** partition if you modify such a command
+   - Automatically reboots into recovery again at the end of the installation
+
+### Requirements
+
+- A PC with Windows 10 or higher
+- Your device's bootloader unlocked
+- Specific drivers for your device _(Your PC might have trouble recognizing it without them)_
+- Necessary files for the Custom ROM installation _(check your device's wiki)_
+- **CMD-AICR.bat** in the same folder as the ROM files and SDK Platform-Tools
+
+### Preparation and How to Use
+
+- Download and unzip the file available in the [**Releases**](https://github.com/B9R7M/CMD-AICR/releases) tab. _([SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=en) included)._
+- Rename the files to be used for the ROM installation:
+
+    - **Custom ROM.zip** to `ROM.zip`
+    - **NikGapps.zip** to `GAPPS.zip`
+    - **Magisk-v28.zip** to `magisk.zip`
+    - **KernelSU.zip** to `KSU.zip`
+    - `boot.img` _(if it has a different name)_
+    - `dtbo.img` _(if it has a different name)_
+    - `vendor_boot.img` _(if it has a different name)_
+    - Patched GKI via a ROOT manager or prebuilt kernel (**boot.img**) to `rootboot.img`
+
+- After renaming the files, paste all of them into the same folder where the **CMD-AICR.bat** file is located
+
+- Run **CMD-AICR.bat** and follow the script instructions
+
+_The file names mentioned above are just examples_
+
+---
+
+### Important Notes
+
+- This script executes the following commands by default:
 
  ```
        fastboot flash boot boot.img
@@ -72,21 +72,21 @@ _Os nomes dos arquivos mencionados acima são apenas exemplos_
        fastboot reboot recovery
 ```
 
-- Meu dispositivo exige alterações nos comandos. Como modificá-los?
+- My device requires command changes. How to modify them?
 
-    - Primeiramente, recomendo instalar um **ambiente de desenvolvimento** _(IDE)_ para simplificar a edição ou modificação dos comandos. Uma excelente sugestão é o [Visual Studio Code](https://code.visualstudio.com/download). Recomendo essa opção porque as instruções descritas abaixo foram elaboradas com base nessa **IDE**
-    - Incluí comentários ao longo do script com marcações específicas para identificar facilmente os pontos onde podem ser feitas alterações no script. No total, há 30 marcações: **C1**, **C2**, **C3**, **C4**, etc. Apenas os pontos essenciais serão citados aqui, mas você pode explorar os demais conforme achar necessário
-     - Use "`%`" pra buscar comentários no script. Exemplo: "`%C1`"
+    - First, I recommend installing a **development environment** _(IDE)_ to simplify editing or modifying the commands. A great suggestion is [Visual Studio Code](https://code.visualstudio.com/download). I recommend this option because the instructions described below are based on this **IDE**
+    - I have included comments throughout the script with specific markings to easily identify the points where changes can be made. There are 31 markings in total: **C1**, **C2**, **C3**, **C4**, etc. Only the essential points are mentioned here, but you can explore the others as needed.
+    - Use "`%`" to search for comments in the script. Example: "`%C1`"
 
-- Modificando comandos FASTBOOT
+- Modifying FASTBOOT Commands
 
-    - Na barra de busca superior do **VS Code**, busque por: `%C6`. Isso levará você diretamente à seção onde os primeiros **comandos fastboot** serão executados
+    - In the upper search bar of **VS Code**, search for: `%C7`. This will take you directly to the section where the first **FASTBOOT commands** are executed.
 
 
-Exemplo:
+Example:
 
 ```Batch
-   REM C6 - Executa os comandos fastboot iniciais, exceto o de reinicialização, para verificar se algum erro será detectado
+   REM C7 - Executes initial fastboot commands, except for reboot, to check for errors
 
    fastboot flash boot boot.img
    fastboot flash dtbo dtbo.img
@@ -95,10 +95,10 @@ Exemplo:
 ```
 
 
-Exemplo com modificações:
+Example with modifications:
 
 ```Batch
-   REM C6 - Executa os comandos fastboot iniciais, exceto o de reinicialização, para verificar se algum erro será detectado
+   REM C7 - Executes initial fastboot commands, except for reboot, to check for errors
 
    fastboot flash boot boot.img
    fastboot flash dtbo dtbo.img
@@ -108,131 +108,131 @@ Exemplo com modificações:
 ```
 
 
-- Comando FASTBOOT de reinicialização 
+- FASTBOOT Reboot Command
 
-     - Busque por: `%C8` ou/e `%C30`
+     - Search for: `%C9` or/e `%C31`
 
 
-Exemplos:
+Examples:
 
 ```Batch
-   REM C8 - Comando de reinicialização aqui
+   REM C9 - Reboot command here
    fastboot reboot recovery
-   echo Processo concluído com sucesso!
+   echo Process successfully completed!
    cls
 
 ```
 ```Batch
-   REM C30 - Reinicializa mais uma vez no recovery
+   REM C31 - Reboots again into recovery
    fastboot reboot recovery
    echo.
 
 ```
 
 
-- Comandos de instalação via ADB Sideload
+- ADB Sideload Installation Commands
 
-     - Busque por: `%C14`, `%C15`, `%C16` e `%C17` para a instalação da ROM. Como o script oferece a opção de múltiplas escolhas, os comandos são repetidos
+     - Search for: `%C15`, `%C16`, `%C17`, and `%C18` for ROM installation. Since the script offers multiple choice options, the commands are repeated.
 
 
-Exemplos:
+Examples:
 
 ```Batch
-   REM C14 - Primeiro comando de instalação da ROM
+   REM C15 - First ROM installation command
    adb -d sideload ROM.zip
    echo.
 
 ```
 ```Batch
-   REM C15 - Segundo comando de instalação da ROM
+   REM C16 - Second ROM installation command
    adb -d sideload ROM.zip
    echo.
 
 ```
 ```Batch
-   REM C16 - Terceiro comando de instalação da ROM
+   REM C17 - Third ROM installation command
    adb -d sideload ROM.zip
    echo.
 
 ```
 ```Batch
-   REM C17 - Quarto comando de instalação da ROM
+   REM C18 - Fourth ROM installation command
    adb -d sideload ROM.zip
    echo.
 
 ```
 
 
-- Comandos de instalação dos GAPPS
+- GAPPS Installation Commands
 
-     - Busque por: `%C19` e `%C20`
+     - Search for: `%C20` and `%C21`
 
 
-Exemplos:
+Examples:
 
 ```Batch
-   REM C19 - Primeiro comando de instalação dos GAPPS
+   REM C20 - First GAPPS installation command
    adb -d sideload GAPPS.zip
    echo.
 
 ```
 ```Batch
-   REM C20 - Segundo comando de instalação dos GAPPS
+   REM C21 - Second GAPPS installation command
    adb -d sideload GAPPS.zip
    echo.
 
 ```
 
- - Comandos de instalação dos arquivos fleshavéis de ROOT ou/e Kernels
+ - Installation Commands for Flashable ROOT or Kernel Files
 
-     - **(MAGISK)** busque por: `%C22` e `%C23`
-     - **(KernelSU)** busque por: `%C25` e `%C26`
+     - **(MAGISK)** search for: `%C23` and `%C24`
+     - **(KernelSU)** search for: `%C26` and `%C27`
 
 
-Exemplos:
+Examples:
 
 ```Batch
-   REM C22 - Primeiro comando de instalação do MAGISK
+   REM C23 - First MAGISK installation command
    adb -d sideload magisk.zip
    echo.
 
 ```
 ```Batch
-   REM C23 - Segundo comando de instalação do MAGISK 
+   REM C24 - Second MAGISK installation command
    adb -d sideload magisk.zip
    echo.
 
 ```
 ```Batch
-   REM C25 - Primeiro comando de instalação do KernelSU
+   REM C26 - First KernelSU installation command
    adb -d sideload KSU.zip
    echo.
 
 ```
 ```Batch
-   REM C26 - Segundo comando de instalação do KernelSU
+   REM C27 - Second KernelSU installation command
    adb -d sideload KSU.zip
    echo.
 
 ```
 
-- Comando de instalação da GKI corrigida
+- Patched GKI Installation Command
 
-     - Busque por: `%C28` e `%C29`
+     - Search for: `%C29` and `%C30`
 
 
-Exemplos:
+Examples:
 
 ```Batch
-   REM C28 - Primeiro comando de instalação da GKI
+   REM C29 - First GKI installation command
    fastboot flash boot rootboot.img
    echo.
 
 ```
 ```Batch
-    REM C29 - Segundo comando de instalação da GKI
-    fastboot flash boot rootboot.img
-    echo.
+   REM C30 - Second GKI installation command
+   fastboot flash boot rootboot.img
+   echo.
 
 ```
 
@@ -240,9 +240,16 @@ Exemplos:
 ---
 
 
-### Comissão
+### Donation
 
-- Este projeto foi desenvolvido sem fins lucrativos, mas, se você gostou e deseja me agradecer, considere fazer uma doação!
+- This project was developed without profit, but if you liked it and want to thank me, consider making a donation!
 
-- **Chave PIX**: `256f1867-fbe0-4c14-9ed4-44307e5057a6`
 - **PayPal**: `joiltonsilvasec3@gmail.com`
+
+---
+
+### License
+
+- This project is licensed under the [MIT License](https://github.com/B9R7M/CMD-AICR/blob/main/LICENSE)
+
+---
