@@ -242,8 +242,8 @@ Examples:
 
 - This project was developed without profit, but if you liked it and want to thank me, consider making a donation!
 
-- **PayPal**: `joiltonsilvasec3@gmail.com`
-- **PIX**: `638b0462-a480-4e07-835a-23d15fd56f44` / `256f1867-fbe0-4c14-9ed4-44307e5057a6`
+- **PayPal**:`joiltonsilvasec3@gmail.com`
+- **PIX**:`638b0462-a480-4e07-835a-23d15fd56f44` / `256f1867-fbe0-4c14-9ed4-44307e5057a6`
 
 ---
 
