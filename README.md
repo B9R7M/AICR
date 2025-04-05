@@ -41,7 +41,7 @@ CMD-AICR is a batch automation script developed to partially simplify the instal
     - **NikGapps.zip** to `GAPPS.zip`
     - **Magisk-v28.zip** to `magisk.zip`
     - **KernelSU.zip** to `KSU.zip`
-    - `boot.img`, `dtbo.img`, `vendor_boot.img` _(if it has a different name)_
+    - **boot.img**, **dtbo.img**, **vendor_boot.img** _(if it has a different name)_
     - Patched GKI via a ROOT manager or prebuilt kernel (**boot.img**) to `rootboot.img`
 
 - After renaming the files, paste all of them into the same folder where the **CMD-AICR.bat** file is located
