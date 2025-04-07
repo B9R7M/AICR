@@ -108,7 +108,7 @@ Example with modifications:
 
 - FASTBOOT Reboot Command
 
-     - Search for: `%C9` or/e `%C31`
+     - Search for: `%C9` or/and `%C31`
 
 
 Examples:
