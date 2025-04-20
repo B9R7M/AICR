@@ -16,12 +16,12 @@ CMD-AICR is a batch automation script developed to partially simplify the instal
 ### What can this script do?
 
    - Verifies the necessary files for installation
-   - Installs GKIs via Fastboot
+   - Installs images (.img) via Fastboot
    - Automatically reboots into recovery
    - Installs the ROM file via ADB Sideload
    - Installs the GAPPS
    - Installs ROOT files
-   - Installs a patched GKI via a ROOT manager or prebuilt Kernels already built into the **boot** or **init_boot** partition if you modify such a command
+   - Installs a patched "boot.img" via a ROOT manager or prebuilt Kernels already built into the **boot** or **init_boot** partition if you modify such a command
    - Automatically reboots into recovery again at the end of the installation
 
 ### Requirements
@@ -214,7 +214,7 @@ Examples:
 
 ```
 
-- Patched GKI Installation Command
+- Patched "boot.img" Installation Command
 
      - Search for: `%C29` and `%C30`
 
@@ -222,13 +222,13 @@ Examples:
 Examples:
 
 ```Batch
-   REM C29 - First GKI installation command
+   REM C29 - First boot.img installation command
    fastboot flash boot rootboot.img
    echo.
 
 ```
 ```Batch
-   REM C30 - Second GKI installation command
+   REM C30 - Second boot.img installation command
    fastboot flash boot rootboot.img
    echo.
 
