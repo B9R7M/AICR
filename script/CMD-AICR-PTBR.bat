@@ -1,3 +1,2 @@
 @echo off
-echo Em breve...
-echo Termino ainda hoje.
+echo Olá Mundo!
