@@ -1,3 +1,2 @@
 @echo off
-echo Shortly...
-echo I'll finish it today.
+echo Hello Word!
