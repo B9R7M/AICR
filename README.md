@@ -42,7 +42,7 @@ CMD-AICR is a batch automation script developed to partially simplify the instal
     - **Magisk-v28.zip** to `magisk.zip`
     - **KernelSU.zip** to `KSU.zip`
     - **boot.img**, **dtbo.img**, **vendor_boot.img** _(if it has a different name)_
-    - Patched GKI via a ROOT manager or prebuilt kernel (**boot.img**) to `rootboot.img`
+    - Patched GKI via a ROOT manager or prebuilt kernel (**boot.img**) to `root-boot.img`
 
 - After renaming the files, paste all of them into the same folder where the **CMD-AICR.bat** file is located
 
@@ -66,7 +66,7 @@ _The file names mentioned above are just examples_
        adb -d sideload GAPPS.zip
        adb -d sideload magisk.zip
        adb -d sideload KSU.zip
-       fastboot flash boot rootboot.img
+       fastboot flash boot root-boot.img
        fastboot reboot recovery
 ```
 
@@ -223,13 +223,13 @@ Examples:
 
 ```Batch
    REM C29 - First boot.img installation command
-   fastboot flash boot rootboot.img
+   fastboot flash boot root-boot.img
    echo.
 
 ```
 ```Batch
    REM C30 - Second boot.img installation command
-   fastboot flash boot rootboot.img
+   fastboot flash boot root-boot.img
    echo.
 
 ```
