@@ -20,7 +20,7 @@ CMD-AICR is a batch automation script developed to partially simplify the instal
    - Automatically reboots into recovery
    - Installs the ROM file via ADB Sideload
    - Installs the GAPPS
-   - Installs ROOT files
+   - Installs fleshable out files (KSU, Magisk, Kernels)
    - Installs a patched "boot.img" via a ROOT manager or prebuilt Kernels already built into the **boot** or **init_boot** partition if you modify such a command
    - Automatically reboots into recovery again at the end of the installation
 
