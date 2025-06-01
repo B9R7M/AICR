@@ -16,7 +16,7 @@ CMD-AICR is a batch automation script developed to partially simplify the instal
 ### What can this script do?
 
    - Verifies the necessary files for installation
-   - Installs images (.img or .bin) via Fastboot
+   - Installs images (.img) via Fastboot
    - Automatically reboots into recovery
    - Installs the ROM file via ADB Sideload
    - Installs the GAPPS
