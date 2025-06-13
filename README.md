@@ -45,7 +45,7 @@ AICR is a batch automation script developed to partially simplify the installati
     - **boot.img**, **dtbo.img**, **vendor_boot.img** _(if it has a different name)_
     - Patched GKI via a ROOT manager or prebuilt kernel (**boot.img**) to `root-boot.img`
 
-- After renaming the files, paste all of them into the same folder where the **AICR.bat** file is located
+- After renaming the files, paste all of them into the same folder where the **full-installation.bat** or/and the individual scripts files is located
 
 - Run **full-installation.bat** and follow the script instructions
 
