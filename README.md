@@ -35,7 +35,8 @@ AICR is a batch automation script developed to partially simplify the installati
 
 ### Preparation and How to Use
 
-- Download and unzip the file available in the [**Releases**](https://github.com/B9R7M/CMD-AICR/releases) tab. _([SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=en) included)._
+- Download and unzip the file available in the [**Releases**](https://github.com/B9R7M/AICR/releases)
+- SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=en)
 - Rename the files to be used for the ROM installation:
 
     - **Custom ROM.zip** to `ROM.zip`
@@ -45,9 +46,9 @@ AICR is a batch automation script developed to partially simplify the installati
     - **boot.img**, **dtbo.img**, **vendor_boot.img** _(if it has a different name)_
     - Patched GKI via a ROOT manager or prebuilt kernel (**boot.img**) to `root-boot.img`
 
-- After renaming the files, paste all of them into the same folder where the **CMD-AICR.bat** file is located
+- After renaming the files, paste all of them into the same folder where the **AICR.bat** file is located
 
-- Run **CMD-AICR.bat** and follow the script instructions
+- Run **full-installation.bat** and follow the script instructions
 
 _The file names mentioned above are just examples_
 
