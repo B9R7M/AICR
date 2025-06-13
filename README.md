@@ -47,7 +47,7 @@ AICR is a batch automation script developed to partially simplify the installati
 
 - After renaming the files, paste all of them into the same folder where the **full-installation.bat** or/and the individual scripts files is located
 
-- Run **full-installation.bat** and follow the script instructions
+- Run **full-installation.bat** or/and the **individual scripts** and follow the script instructions
 
 _The file names mentioned above are just examples_
 
