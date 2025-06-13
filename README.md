@@ -79,7 +79,12 @@ _The file names mentioned above are just examples_
 
 - Modifying FASTBOOT Commands
 
-    - In the upper search bar of **VS Code**, search for: `%C7`. This will take you directly to the section where the first **FASTBOOT commands** are executed.
+    - In the upper search bar of **VS Code**, search for:
+  
+  ```
+  %C7
+  ```
+    - This will take you directly to the section where the first **FASTBOOT commands** are executed.
 
 
 Example:
@@ -109,9 +114,14 @@ Example with modifications:
 
 - FASTBOOT Reboot Command
 
-     - Search for: `%C9` or/and `%C31`
-
-
+     - Search for:
+       ```
+       %C9
+       ```
+     - or/and
+       ```
+       %C31
+       ```
 Examples:
 
 ```Batch
@@ -131,7 +141,21 @@ Examples:
 
 - ADB Sideload Installation Commands
 
-     - Search for: `%C15`, `%C16`, `%C17`, and `%C18` for ROM installation. Since the script offers multiple choice options, the commands are repeated.
+     - Search for:
+       ```
+       %C15
+       ```
+       ```
+       %C16
+       ```
+       ```
+       %C17
+       ```
+       ```
+       %C18
+       ```
+       
+     - for ROM installation. Since the script offers multiple choice options, the commands are repeated.
 
 
 Examples:
@@ -164,7 +188,13 @@ Examples:
 
 - GAPPS Installation Commands
 
-     - Search for: `%C20` and `%C21`
+     - Search for:
+      ```
+      %C20
+      ```
+      ```
+      %C21
+      ```
 
 
 Examples:
@@ -184,8 +214,20 @@ Examples:
 
  - Installation Commands for Flashable ROOT or Kernel Files
 
-     - **(MAGISK)** search for: `%C23` and `%C24`
-     - **(KernelSU)** search for: `%C26` and `%C27`
+     - **(MAGISK)** search for:
+       ```
+       %C23
+       ```
+       ```
+       %C24
+       ```
+     - **(KernelSU)** search for:
+       ```
+       %C26
+       ```
+       ```
+       %C27
+       ```
 
 
 Examples:
@@ -217,7 +259,13 @@ Examples:
 
 - Patched "boot.img" Installation Command
 
-     - Search for: `%C29` and `%C30`
+     - Search for:
+       ```
+       %C29
+       ```
+       ```
+       %C30
+       ```
 
 
 Examples:
