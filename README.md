@@ -1,5 +1,6 @@
-# CMD-AICR
-CMD-AICR is a batch automation script developed to partially simplify the installation of Custom ROMs on devices using Fastboot/Bootloader. Depending on the device model, it will not be necessary to manually input commands, as the entire process is carried out automatically.
+# AICR (Automatic installation of custom roms)
+
+AICR is a batch automation script developed to partially simplify the installation of Custom ROMs on devices using Fastboot/Bootloader. Depending on the device model, it will not be necessary to manually input commands, as the entire process is carried out automatically.
 
 ---
 
