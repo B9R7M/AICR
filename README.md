@@ -35,7 +35,7 @@ AICR is a batch automation script developed to partially simplify the installati
 ### Preparation and How to Use
 
 - Download and unzip the file available in the [**Releases**](https://github.com/B9R7M/AICR/releases)
-- [SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=en)
+- Download [SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools?hl=en) and paste the contents of the file _(without subfolders)_ into the same folder where **"full-installation.bat"** is located.
 - Rename the files to be used for the ROM installation:
 
     - **Custom ROM.zip** to `ROM.zip`
