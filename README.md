@@ -49,8 +49,7 @@ AICR is a batch automation script developed to partially simplify the installati
 
 - Run **full-installation.bat** or/and the **individual scripts** and follow the instructions
 
-_The file names mentioned above are just examples_
-_Not all files are necessary or mandatory, check your device's wiki to check which files to use_
+_The file names mentioned above are just examples. Not all files are necessary or mandatory, check your device's wiki to check which files to use_
 ---
 
 ### Important Notes
