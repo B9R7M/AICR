@@ -28,7 +28,7 @@ AICR is a batch automation script developed to partially simplify the installati
 ### Requirements
 
 - A PC with Windows 10 or higher
-- Your device's bootloader unlocked
+- Bootloader of your device unlocked
 - Specific drivers for your device _(Your PC might have trouble recognizing it without them)_
 - Necessary files for the Custom ROM installation _(check your device's wiki)_
 - **full-installation.bat** or/and the individual scripts in the same folder, including **SDK Platform-tools**
