@@ -71,15 +71,14 @@ AICR is a batch automation script developed to partially simplify the installati
 
 - My device requires command changes. How to modify them?
 
-    - First, I recommend installing a **development environment** _(IDE)_ to simplify editing or modifying the commands. A great suggestion is [Visual Studio Code](https://code.visualstudio.com/download). I recommend this option because the instructions described below are based on this **IDE**
+    - First, I recommend installing a **development environment** _(IDE)_ to simplify editing or modifying the commands. **Although it is not an IDE per se**, a great suggestion is [Visual Studio Code](https://code.visualstudio.com/download). I recommend this option because the instructions described below are based on this in it.
     - I have included comments throughout the script with specific markings to easily identify the points where changes can be made. There are 31 markings in total: **C1**, **C2**, **C3**, **C4**, etc. Only the essential points are mentioned here, but you can explore the others as needed.
     - Use `%`
     - to search for comments in the script. Example:
       ```
       %C1
       ```
-
-    - Modifying FASTBOOT Commands
+- Modifying FASTBOOT Commands
 
     - In the upper search bar of **VS Code**, search for:
   
