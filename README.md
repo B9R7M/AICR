@@ -74,18 +74,18 @@ AICR is a batch automation script developed to partially simplify the installati
     - First, I recommend installing a **development environment** _(IDE)_ to simplify editing or modifying the commands. A great suggestion is [Visual Studio Code](https://code.visualstudio.com/download). I recommend this option because the instructions described below are based on this **IDE**
     - I have included comments throughout the script with specific markings to easily identify the points where changes can be made. There are 31 markings in total: **C1**, **C2**, **C3**, **C4**, etc. Only the essential points are mentioned here, but you can explore the others as needed.
     - Use `%`
-      - to search for comments in the script. Example:
+    - to search for comments in the script. Example:
       ```
       %C1
       ```
 
-- Modifying FASTBOOT Commands
+    - Modifying FASTBOOT Commands
 
     - In the upper search bar of **VS Code**, search for:
   
-  ```
-  %C7
-  ```
+      ```
+      %C7
+      ```
     - This will take you directly to the section where the first **FASTBOOT commands** are executed.
 
 
