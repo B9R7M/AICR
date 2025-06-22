@@ -80,7 +80,7 @@ set "vbmeta=n"
 set "vbmeta_system=n"
 set "super_empty=n"
 
-:: Pergunta ao usuário quais imagens ele quer instalar
+:: Pergunta ao usuário quais imagens quer instalar
 set /p boot=Flashar boot.img? (S/N): 
 set /p dtbo=Flashar dtbo.img? (S/N): 
 set /p vendor_boot=Flashar vendor_boot.img? (S/N): 
